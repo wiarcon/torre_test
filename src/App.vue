@@ -1,10 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+ <div id="app" class="page-container">
+    <md-app md-waterfall md-mode="fixed">
+      <md-app-toolbar class="md-primary">
+        <span class="md-title">torre</span>
+      </md-app-toolbar>
+
+      <md-app-drawer md-permanent="clipped">
+        <md-list>
+          <md-list-item to="/">
+            <md-icon>home</md-icon>
+            <span class="md-list-item-text">Home</span>
+          </md-list-item>
+
+          <md-list-item to="/people">
+            <md-icon>people</md-icon>
+            <span class="md-list-item-text">People</span>
+          </md-list-item>
+
+          <md-list-item to="/jobs">
+            <md-icon>work</md-icon>
+            <span class="md-list-item-text">Jobs</span>
+          </md-list-item>
+
+          <md-list-item to="/organisations">
+            <md-icon>apartment</md-icon>
+            <span class="md-list-item-text">Organisations</span>
+          </md-list-item>
+
+          <md-list-item to="/dataanalysis">
+            <md-icon>table_chart</md-icon>
+            <span class="md-list-item-text">Data analysis</span>
+          </md-list-item>
+        </md-list>
+      </md-app-drawer>
+
+      <md-app-content>
+        <router-view :key="$route.path" />
+      </md-app-content>
+    </md-app>
   </div>
 </template>
 

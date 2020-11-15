@@ -2,8 +2,8 @@
   "name": "torre_test",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
-    "start": "http-server ./dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

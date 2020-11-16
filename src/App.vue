@@ -2,7 +2,7 @@
  <div id="app" class="page-container">
     <md-app md-waterfall md-mode="fixed">
       <md-app-toolbar class="md-primary" md-elevation="1">
-        <span class="md-title">torre</span>
+        <span class="md-title">torre search</span>
       </md-app-toolbar>
       <md-app-content>
         <Search />
